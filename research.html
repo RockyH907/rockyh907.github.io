@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research · Kai Park</title>
+  <meta name="description" content="Research by Kai (Hyeyeon) Park: semantic cognition, morphological derivation, cross-lingual sentiment, and LLM alignment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/styles.css?v=15">
+</head>
+<body>
+  <header class="bar">
+    <a class="mark" href="index.html" aria-label="Kai Park, home">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><line x1="5" y1="22" x2="14" y2="6"/><line x1="14" y1="6" x2="23" y2="22"/><circle cx="5" cy="22" r="3"/><circle cx="14" cy="6" r="3"/><circle cx="23" cy="22" r="3"/></svg>
+    </a>
+    <button class="theme-btn" type="button" aria-label="Toggle light and dark theme">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg>
+    </button>
+  </header>
+
+  <section class="page-head">
+    <div class="sky"></div>
+    <nav class="mini-nav" aria-label="Sections"><svg viewBox="0 0 380 200" data-current="research"></svg></nav>
+    <h1 class="title">Research</h1>
+  </section>
+
+  <main class="content">
+    <section class="section" aria-labelledby="h-summary">
+      <header><figure class="robot" aria-hidden="true">
+          <svg viewBox="0 0 120 72">
+            <defs>
+              <linearGradient id="robot-head" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" style="stop-color:var(--field-mint)"/>
+                <stop offset="1" style="stop-color:var(--field-blue)"/>
+              </linearGradient>
+            </defs>
+            <text class="q" x="4" y="58">?</text>
+            <g class="bot">
+              <rect class="stem" x="45" y="7" width="2.4" height="12" rx="1.2" transform="rotate(-18 46 13)"/>
+              <rect class="stem" x="72.6" y="7" width="2.4" height="12" rx="1.2" transform="rotate(18 74 13)"/>
+              <circle class="tip" cx="43.8" cy="6.5" r="3.4"/><circle class="tip" cx="76.2" cy="6.5" r="3.4"/>
+              <rect class="ear" x="26" y="27" width="10" height="15" rx="4"/><rect class="ear" x="84" y="27" width="10" height="15" rx="4"/>
+              <rect class="leg" x="49" y="46" width="6" height="15" rx="3"/><rect class="leg" x="65" y="46" width="6" height="15" rx="3"/>
+              <rect class="head" x="33" y="17" width="54" height="34" rx="13"/>
+              <ellipse class="shine" cx="46" cy="23.5" rx="7" ry="2.6"/>
+              <circle class="face" cx="50" cy="32" r="3.4"/><circle class="face" cx="70" cy="32" r="3.4"/>
+              <path class="face" d="M51.5 39.5 Q60 46.5 68.5 39.5 Q60 43 51.5 39.5 Z"/>
+              <circle class="cheek" cx="44.5" cy="39" r="3"/><circle class="cheek" cx="75.5" cy="39" r="3"/>
+            </g>
+            <text class="ex" x="104" y="26">!</text>
+          </svg>
+        </figure>
+        <span class="label">Profile</span><h2 id="h-summary">What I work on</h2></header>
+      <div class="body">
+        <p>Computational linguist working on semantic cognition, morphological derivation, and LLM hallucination and interpretability, with applied experience in LLM alignment and evaluation at DeepL.</p>
+        <p>The common thread: speakers encode more than they say, through derivation, register, particles and tone. Nuance that can be measured can be modeled, and what can be modeled can be aligned.</p>
+        <ul class="facts">
+          <li>Semantic cognition</li><li>Morphological derivation</li><li>Cross-lingual sentiment</li><li>Pragmatics &amp; politeness</li><li>RLHF &amp; human evaluation</li><li>Hallucination &amp; interpretability</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 01 NUANCE -->
+    <section class="section" id="nuance" aria-labelledby="h-nuance">
+      <header><span class="sw" style="background:var(--field-yellow)"></span><span class="label">01 · Nuance</span><h2 id="h-nuance">How languages carve meaning</h2></header>
+      <div class="body">
+        <article class="item">
+          <div class="row"><h3>Can the Use of Derivatives Affect Cognition?</h3><span class="gloss">MA thesis · 2026</span></div>
+          <p class="gloss meta">A Large-Scale Empirical Study on Morphological Derivation and the Korean Blue-Green Spectrum · Georg-August-Universität Göttingen · Supervisors: Prof. Dr. Stavros Skopeteas, Prof. Dr. Jacopo Romoli</p>
+          <p>Does language structure shape perception? Study 1 analyzes a curated corpus of 419 Korean color-term variants; Study 2 is a behavioral experiment across Korea, the US, the UK and Australia. Korean derivation is far more productive than English, and jamo-level similarity predicts semantic similarity better than morpheme-level similarity, partly via consonant strengthening independent of vowel-harmony shift.</p>
+          <ul class="facts"><li>419 color-term variants</li><li>≈ 21 : 1 KO vs EN unique forms</li><li>jamo &gt; morpheme</li><li>N = 9,534 trials</li></ul>
+          <p>Results fit a usage-salience account: frequent, morphologically economical categories are lexically compact and perceptually sharp. The design is correlational; the account is a plausible interpretation, not a demonstrated cause.</p>
+        </article>
+        <article class="item">
+          <div class="row"><h3>Light Verbs, Heavy Meaning?</h3><span class="gloss">Working paper · 2026</span></div>
+          <p class="gloss meta">Exploring Informativity, Frequency and Morpho-Syntactic Interface of Simplex Verbs and 'root+hata' Light Verb Constructions in Korean · MA seminar, Göttingen</p>
+          <p>Tests Polinsky and Magyar's (2020) informativity account of head-final lexicons on Korean simplex verbs vs. root+hata constructions, using dictionary sense counts, embedding self-similarity (KLUE-BERT, KcBERT, Vertex AI) and corpus frequency.</p>
+          <ul class="facts"><li>38 conditions</li><li>predicted asymmetry in 58%</li><li>item-driven, not structural</li></ul>
+          <figure class="fig"><img src="assets/img/light-verbs-self-similarity.png" width="800" height="454" loading="lazy" alt="Line chart of embedding self-similarity for ten Korean verbs, five simplex verbs and five root+hata light verb constructions, under five model and register settings; Vertex AI scores sit highest throughout, and the other settings vary item by item."><figcaption class="gloss">Embedding self-similarity (mean pairwise cosine) for five simplex / root+hata verb pairs, across models and registers.</figcaption></figure>
+          <p><a href="https://github.com/bakeyeon/light-verbs-heavy-meaning">Code and paper on GitHub →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 QUANTIFY -->
+    <section class="section" id="quantify" aria-labelledby="h-quantify">
+      <header><span class="sw" style="background:var(--field-peach)"></span><span class="label">02 · Quantify</span><h2 id="h-quantify">Measuring what people see and feel</h2></header>
+      <div class="body">
+        <article class="item">
+          <div class="row"><h3>The Grue Divide: When Cognitive Accuracy Doesn't Predict Affective Alignment</h3><span class="gloss">Poster · PANDORA @ EMNLP 2026</span></div>
+          <p class="gloss meta">Sole author · Proceedings of the First Workshop on Pluralistic AI NLP (PANDORA 2026), pp. 35–68 · ACL · DOI 10.18653/2026.pandora-1.2</p>
+          <dl class="csw">
+            <dt>Claim</dt><dd>Cognitive accuracy does not guarantee affective alignment.</dd>
+            <dt>Evidence</dt><dd>Korean and Australian cohorts are statistically equivalent in error rate (TOST, p = 0.003). Yet in Sentiment–Formality–Friendliness (SFF) space, the Australian cohort clusters with the US and UK, away from Korea.</dd>
+            <dt>So what</dt><dd>A model optimized only for categorical accuracy can still miss culturally specific connotation. Alignment should model perceptual and socio-affective signal together.</dd>
+          </dl>
+          <ul class="facts"><li>9,534 trials</li><li>~2,200 took part</li><li>1,159 analyzed</li><li>4 cohorts: KR · US · UK · AU</li><li>SFF framework</li></ul>
+          <div class="fig-pair"><figure class="fig"><div class="crop" style="aspect-ratio: 856 / 281"><img src="assets/img/grue-accuracy.png" width="856" height="609" loading="lazy" alt="Accuracy gap from Korea, adjusted GLM coefficients with 95% confidence intervals: Australia sits on zero (p = .973), the UK (p = .028) and US (p = .039) are less accurate than Korea."></div><figcaption class="gloss">1 · They see alike: Australia's accuracy is indistinguishable from Korea's once age, gradient and media habits are controlled.</figcaption></figure><figure class="fig"><img src="assets/img/grue-sff-distance.png" width="856" height="279" loading="lazy" alt="Distance in SFF space from Australia to Korea, the US and the UK for blue, green and teal: for every color the nearest cohort is English-speaking, never Korea."><figcaption class="gloss">2 · They feel apart: in Sentiment–Formality–Friendliness space, Australia's nearest neighbour is always English-speaking, never Korea.</figcaption></figure></div>
+          <p><a href="https://bakeyeon.github.io/colorfish/">Project page: talk, survey, FAQ, poster →</a> &nbsp; <a href="https://aclanthology.org/2026.pandora-1.2/">Paper (ACL Anthology) →</a> &nbsp; <a href="https://osf.io/xub35/">Dataset, model card &amp; datasheet (OSF) →</a></p>
+          <p class="gloss">Behind the paper: <a href="https://medium.com/@kaiwritesornot/how-to-write-a-good-paper-43c475f277d1">How to Write a Good Paper</a>, on a year of design changes, reviews and narrowing the scope (Medium, 2026).</p>
+        </article>
+        <article class="item">
+          <div class="row"><h3>Large-scale cognitive data architecture</h3><span class="gloss">Experiment platform · 2025</span></div>
+          <p>Designed, built and deployed the web experiment behind both studies: a gamified block-counting task on color gradients, then affect-keyword elicitation, with randomized trial order and per-participant stimulus sampling. About 2,200 people took part. The platform was also featured on the <a href="https://www.deepl.com/en/blog/connecting-insights-deepl-bridges">DeepL Blog</a>.</p>
+          <p><a href="https://github.com/bakeyeon/colorfish_public">Platform source on GitHub →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 ALIGN -->
+    <section class="section" id="align" aria-labelledby="h-align">
+      <header><span class="sw" style="background:var(--field-lilac)"></span><span class="label">03 · Align</span><h2 id="h-align">Making models carry nuance</h2></header>
+      <div class="body">
+        <article class="item">
+          <div class="row"><h3>How Much Sentiment Can Be Carried by Modal Particles?</h3><span class="gloss">Term paper · 2025</span></div>
+          <p class="gloss meta">A Comparative Analysis Using BERT, Hugging Face, and FastText Models · Deep Learning in NLP, HHU Düsseldorf · featured on the DeepL Blog</p>
+          <p>Benchmarks sentiment models on German modal particles (<i>ja, doch, halt, mal</i>), which shift tone without changing propositional content.</p>
+          <p><a href="https://github.com/bakeyeon/modalparticles_sentiment_analysis/">GitHub →</a></p>
+        </article>
+        <article class="item">
+          <div class="row"><h3>Modalpartikeln: Can Sentiments Survive Translation with Emojis?</h3><span class="gloss">Term paper · 2024</span></div>
+          <p class="gloss meta">Decoding Sentiments from German Modal Particles to Korean Using Emojis · The Meaning of Gestures (and more), Prof. Dr. Jacopo Romoli · featured on the DeepL Blog</p>
+          <p><i>Sehen wir</i> and <i>Sehen wir mal</i> both come out as "Let's see", but the particle <i>mal</i> turns a businesslike decision into a relaxed suggestion. Two surveys measured this: German speakers rated the sentiment of modal particles, and Korean speakers rated expressive emojis. The two sets of scores matched at about 80%, with positive sentiment aligning almost exactly, suggesting emojis can carry tone that translation flattens.</p>
+          <figure class="fig"><img src="assets/img/modal-particles-emoji.png" width="800" height="564" loading="lazy" alt="Line chart comparing German speakers' sentiment scores for modal particles with Korean speakers' scores for the matched emojis, across 14 particle uses; positive uses track closely, negative uses diverge more."><figcaption class="gloss">Sentiment of German modal particles (German raters) against their matched emojis (Korean raters).</figcaption></figure>
+          <p><a href="https://github.com/bakeyeon/Modalparticles_Emojis">GitHub →</a> &nbsp; <a href="https://medium.com/gopenai/can-we-translate-our-sentiments-140c55822ead">Read the write-up →</a> &nbsp; <a href="https://github.com/bakeyeon/sentiment_translator">Sentiment Translator prototype →</a></p>
+        </article>
+        <article class="item">
+          <div class="row"><h3>Alignment work at DeepL</h3><span class="gloss">Language Data Team · 2024–</span></div>
+          <ul class="bul">
+            <li>Human annotation for RLHF: preference ranking of Korean candidates, minimal edits that isolate error signals, and full rewrites as gold-standard data.</li>
+            <li>KO–EN cross-lingual work: syntactic classification, source-text correction and translation-quality judgments, plus linguistic rationales and decision criteria for ambiguity that fed into the core NLP research team's guidelines.</li>
+            <li>Proposed the 3-axis SFF framework internally for modeling social distance in controlled generation, with honorific and politeness hierarchies framed as data guidelines for tone-control models; the unadopted proposal later became an independent, sole-authored PANDORA paper.</li>
+            <li>Behavioral probing of pre-release formality-controlled models in legal, medical and automotive domains, and a working prototype of the "Nudge Editor" concept.</li>
+          </ul>
+          <p class="gloss">Korean phenomena handled</p>
+          <ul class="facts"><li>Honorific register (jondaemal / banmal)</li><li>은/는 vs 이/가</li><li>Sentence-ending choice</li><li>Ellipsis and ambiguity</li><li>Speech-transcript errors</li></ul>
+          <p><a href="experience.html">Full experience →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="h-pubs">
+      <header><span class="label">Index</span><h2 id="h-pubs">Publications &amp; papers</h2></header>
+      <div class="body">
+        <ol class="tl">
+          <li class="major"><span class="gloss">2026 · Conference paper (poster)</span><br><a href="https://aclanthology.org/2026.pandora-1.2/">The Grue Divide: When Cognitive Accuracy Doesn't Predict Affective Alignment</a>. PANDORA @ EMNLP 2026, Budapest.</li>
+          <li class="major"><span class="gloss">2026 · MA thesis</span><br>Can the Use of Derivatives Affect Cognition? A Large-Scale Empirical Study on Morphological Derivation and the Korean Blue-Green Spectrum. Göttingen.</li>
+          <li><span class="gloss">2026 · Working paper</span><br><a href="https://github.com/bakeyeon/light-verbs-heavy-meaning">Light Verbs, Heavy Meaning?</a></li>
+          <li><span class="gloss">2025 · Supervised student publication</span><br><a href="https://github.com/bakeyeon/modalparticles_sentiment_analysis/">How Much Sentiment Can Be Carried by Modal Particles?</a></li>
+          <li><span class="gloss">2024 · Supervised student publication</span><br><a href="https://github.com/bakeyeon/Modalparticles_Emojis/blob/main/Modalpartikeln_Can_Sentiments_Survive_Translation_with_Emojis.pdf">Modalpartikeln: Can Sentiments Survive Translation with Emojis?</a></li>
+        </ol>
+        <p class="gloss">ORCID <a href="https://orcid.org/0000-0002-2854-0127">0000-0002-2854-0127</a></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="h-notes">
+      <header><span class="label">Elsewhere</span><h2 id="h-notes">Writing &amp; tools</h2></header>
+      <div class="body">
+        <div class="notes">
+          <a href="https://www.deepl.com/en/blog/connecting-insights-deepl-bridges"><span class="label">Feature · DeepL Blog · 2025</span><span class="t">Modal-particle and emoji research featured by DeepL</span></a>
+          <a href="https://medium.com/gopenai/can-we-translate-our-sentiments-140c55822ead"><span class="label">Essay · GoPenAI on Medium · 2026</span><span class="t">Can We Translate Our Sentiments?</span></a>
+          <a href="https://bakeyeon.github.io/colorfish/"><span class="label">Project · Interactive</span><span class="t">The Grue Divide: talk, survey, FAQ and poster</span></a>
+          <a href="https://github.com/bakeyeon/gcloud-tpu-spot-automator"><span class="label">Tool · Google TRC</span><span class="t">Spot TPU auto-provisioner for TRC researchers</span></a>
+          <a href="https://bakeyeoni.notion.site/CL-Research-Tips-for-Beginners-2b2818a1b111804aa73df65336f843a0"><span class="label">Guide · Notion</span><span class="t">CL Research Tips for Beginners, shared at a colloquium</span></a>
+          <a href="https://medium.com/@kaiwritesornot/from-curiosity-to-proposal-how-academic-research-actually-works-c314f835b751"><span class="label">Essay · Medium · 2026</span><span class="t">From Curiosity to Proposal: How Academic Research Actually Works</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <span class="gloss">Kai (Hyeyeon) Park · Germany, open to relocation</span>
+    <span class="links">
+      <a href="mailto:kai.hyeyeon.park@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/bakeyeon/">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=CzCE0C0AAAAJ">Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-2854-0127">ORCID</a>
+      <a href="https://github.com/bakeyeon">GitHub</a>
+    </span>
+  </footer>
+  <script src="assets/main.js?v=3"></script>
+</body>
+</html>
